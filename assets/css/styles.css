@@ -77,6 +77,24 @@ a {
     line-height: 1.71;
 }
 
+.section-tag {
+    color: var(--desc-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.section-tag::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    top: -9px;
+    width: 25px;
+    height: 1px;
+    margin-right: 21px;
+    background: var(--desc-color);
+}
+
 /* Header */
 .header {
     margin-top: 28px;
@@ -343,4 +361,96 @@ a {
     font-size: 1.9rem;
     font-weight: 600;
     letter-spacing: 1.995px;
+}
+
+/* Services */
+.services {
+    margin-top: 106px;
+}
+
+.services__heading {
+    position: relative;
+    max-width: 520px;
+    margin-top: 12px;
+}
+
+.services__heading::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    right: 97px;
+    bottom: 19px;
+    width: 66px;
+    height: 2px;
+    background: var(--desc-color);
+}
+
+.services__row {
+    display: flex;
+}
+
+.services__control {
+    display: flex;
+    column-gap: 17px;
+    margin-left: auto;
+    padding: 41px 76px 9px;
+}
+
+.services__control-btn {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #e2eddf;
+    color: var(--desc-color);
+    background: #e2eddf;
+    transition: 0.25s;
+}
+
+.services__control-btn:hover {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.services__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.services-item {
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.services-item:hover {
+    transform: translateY(-10px);
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    cursor: pointer;
+}
+
+.services-item__thumb {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0 0;
+}
+
+.services-item__body {
+    padding: 24px 18px;
+    background: #fff;
+    border-radius: 0 0 20px 20px;
+}
+
+.services-item__heading {
+    color: var(--desc-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.services-item__desc {
+    max-width: 268px;
+    margin-top: 18px;
 }
