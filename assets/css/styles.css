@@ -274,3 +274,73 @@ a {
     bottom: -85px;
     z-index: 1;
 }
+
+/* Clients */
+.clients {
+    margin-top: 42px;
+}
+
+.clients__inner {
+    padding: 76px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 999px;
+    background: #e2eddf;
+}
+
+.clients__google {
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.clients__google,
+.clients__riotinto,
+.clients__slack-text,
+.clients__heroku-text {
+    color: #143c3c;
+}
+
+.clients__slack,
+.clients__heroku,
+.clients__agworld {
+    display: flex;
+    align-items: center;
+}
+
+.clients__slack {
+    margin-left: 47px;
+}
+
+.clients__slack-text {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.clients__agworld {
+    margin-left: 51px;
+}
+
+.clients__agworld-text {
+    margin-left: 11px;
+    color: #163c35;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.clients__riotinto {
+    margin-left: 64px;
+    font-family: "Sonsie One", system-ui;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.clients__heroku {
+    margin-left: 63px;
+}
+
+.clients__heroku-text {
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
+}
