@@ -835,6 +835,9 @@ a {
 }
 
 .project__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 45%;
     left: 50%;
@@ -984,6 +987,12 @@ a {
     line-height: 1.2;
     border-radius: 20px;
     background: #e2eddf;
+    transition: 0.25s;
+}
+
+.blog-item:hover .blog-item__tag {
+    background: var(--primary-color);
+    color: #fff;
 }
 
 .blog-item__heading {
@@ -1040,6 +1049,7 @@ a {
     border: none;
     line-height: 2;
     color: #fff;
+    font-size: 2.2rem;
 }
 
 .footer-form__input::placeholder {
